@@ -42,7 +42,7 @@ export default function Home() {
         />
       </div>
 
-      {!userId && <SignInButton />}
+      {!userId && <SignInButton mode="modal" />}
       {userId && (
         <>
           <p className="text-2xl font-semibold">Welcome, {userId}</p>
